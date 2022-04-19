@@ -1,0 +1,23 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./"],
+      "alias": {
+        "@assets": "./src/assets",
+        "@components": "./src/components",
+        "@constants": "./src/constants",
+        "@containers": "./src/containers",
+        "@routes": "./src/routes",
+        "@store": "./src/store",
+        "@utils": "./src/utils",
+        "@services": "./src/services",
+        "@common": "./src/common",
+        "@hooks": "./src/hooks"
+      }
+    }]
+  ]
+}
